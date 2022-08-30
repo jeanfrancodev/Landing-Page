@@ -14,23 +14,100 @@
     />
   </head>
   <body>
-    <ul id="menu">
-      <li>
-        <a> Home </a>
-      </li>
-      <li>
-        <a> Caqui</a>
-      </li>
-      <li>
-        <a> Descubra se é um caqui</a>
-      </li>
-      <li>
-        <a> Seja um caqui você também </a>
-      </li>
-      <li>
-        <a> Contato </a>
-      </li>
-    </ul>
+    <header class="header">
+      <ul class="menu" id="menu">
+        <li>
+          <a> Home </a>
+        </li>
+        <li>
+          <a> Caqui</a>
+        </li>
+        <li>
+          <a> Descubra se é um caqui</a>
+        </li>
+        <li>
+          <a> Contato </a>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="modal-btn btn-registro"
+            data-toggle="modal"
+            data-target="#exampleModal"
+          >
+            <a>Se torne um caqui agora</a>
+          </button>
+
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Cadastre-se
+                  </h5>
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Fechar"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="recipient-name" class="col-form-label"
+                        >E-mail:</label
+                      >
+                      <br>
+                       <input type="email" id="email" onkeyup= "validaEmail()"/>
+                        <div id='txtEmail'></div>
+                      <br />
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"
+                        >Nome:</label
+                      >
+                      <br />
+                      <input type="text" id="nome" onkeyup="validaNome()"/>
+                      <div id="txtNome"></div>
+                      <br />
+                    </div>
+
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label"
+                        >Idade:</label
+                      ><br>
+                      <input type="idade" id="idade" onkeyup="validaIdade()"/>
+                      <div id='txtIdade'></div>
+                      <br />
+                    
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Fechar
+                  </button>
+                  <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </header>
     <h1 class="center">CAQUI HOJE, CAQUI AMANHÃ, CAQUI PRA SEMPRE</h1>
     <div class="container">
       <div>
@@ -156,30 +233,38 @@
       </div>
     </div>
     <footer>
-      <div class="container">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img
-            class="tm-social p-30"
-            src="assets/img/facebook.png"
-            alt="Logo do Facebook"
-          />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img
-            class="tm-social p-30"
-            src="assets/img/instagram.png"
-            alt="Logo do instagram"
-          />
-        </a>
-        <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">
-          <img
-            class="tm-social p-30"
-            src="assets/img/whatsapp.png"
-            alt="Logo do whatsapp"
-          />
-        </a>
+      <div class="row align-items-end">
+        <div class="col">
+          <p class="center">Todos direitos reservados: JeanFranco &copy</p>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+          <div class="container">
+            <h1 class="center-contact">Siga nossas redes sociais</h1>
+            <a href="https://www.facebook.com/" target="_blank">
+              <img
+                class="tm-social p-2"
+                src="assets/img/facebook.png"
+                alt="Logo do Facebook"
+              />
+            </a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                class="tm-social p-2"
+                src="assets/img/instagram.png"
+                alt="Logo do instagram"
+              />
+            </a>
+            <a href="https://www.whatsapp.com/?lang=pt_br" target="_blank">
+              <img
+                class="tm-social p-2"
+                src="assets/img/whatsapp.png"
+                alt="Logo do whatsapp"
+              />
+            </a>
+          </div>
+        </div>
       </div>
-      <p class="center">Todos direitos reservados: JeanFranco &copy</p>
 
       <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -196,6 +281,7 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"
       ></script>
+      <script src="assets/js/script.js"></script>
     </footer>
   </body>
 </html>

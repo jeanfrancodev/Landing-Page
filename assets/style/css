@@ -3,54 +3,83 @@
   text-align: center;
   color: darkred;
 }
-.justify{
+
+.justify {
   text-align: center;
   font-size: 20px;
-  color: orangered ;
+  color: orangered;
 }
+
 .container {
   display: flex;
   flex-grow: row;
   justify-content: center;
   align-items: center;
-  
 }
-#menu li {
+.header {
+
+}
+
+.menu li {
   display: inline;
   padding: 15px;
   text-decoration: none;
- } 
+}
+
 #menu li a {
   text-decoration: none;
-  color: #218c74;
+  color: darkgreen;
   font-size: 20px;
+  border: none;
 }
+
 #menu li a:hover {
-color: grey;
+  color: gold;
+  border: none;
 }
+
+.btn-registro {
+  border: 0;
+  background: none;
+}
+
 .p-30 {
-  padding: 30px;
+  padding: 15px;
 }
+
+.p-2 {
+  padding: 2px;
+}
+
 .br-50 {
   border-radius: 20%;
 }
+
 .wh-300 {
   width: 200px;
   height: 200px;
 }
+
 .tm-social {
   width: 50px;
   height: 50px;
 }
+
 .mb-50 {
   margin-bottom: 50px;
 }
+
 /*Estilos da página contato.html*/
 .ml-50 {
   margin-left: 50px;
 }
+
 .card-img-top {
   width: 50px;
   height: 200px;
+}
 
+.center-contact {
+  font-size: 15px;
+  color: orangered;
 }
